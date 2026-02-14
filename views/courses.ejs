@@ -1,0 +1,15 @@
+<%- include("partials/navbar") %>
+
+<h1>All Courses</h1>
+
+<ul>
+  <% courses.forEach(course => { %>
+    <li>
+      <a href="/courses/<%= course.id %>">
+        <%= course.name %>
+      </a>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include("partials/footer") %>

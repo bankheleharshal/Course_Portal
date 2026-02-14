@@ -1,0 +1,12 @@
+<%- include("partials/navbar") %>
+
+<h1>Course Details</h1>
+
+ <% if (course) { %>
+  <h2><%= course.name %></h2>
+   
+  <p>Price: ₹<%= course.fees %></p>
+<% } %>
+
+
+<%- include("partials/footer") %>
